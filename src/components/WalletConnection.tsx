@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Wallet, Shield, Zap, Users, Music, Music2, Music3, Music4 } from 'lucide-react';
@@ -25,45 +24,62 @@ const WalletConnection = ({ onConnect }: WalletConnectionProps) => {
         <Music4 className="absolute top-40 right-16 text-indigo-300 opacity-30 w-6 h-6 animate-bounce" style={{ animationDelay: '0.8s' }} />
         <Music className="absolute bottom-32 left-1/4 text-emerald-300 opacity-18 w-7 h-7 animate-bounce" style={{ animationDelay: '3.2s' }} />
         
-        {/* Stacked, Disorganized Musician Images with proper aspect ratios */}
-        <div className="absolute top-12 right-16" style={{ animation: 'float 8s ease-in-out infinite', transform: 'rotate(-8deg)' }}>
+        {/* Larger, Non-transparent, More Spread Out Musician Images */}
+        <div className="absolute top-8 right-12" style={{ animation: 'float 8s ease-in-out infinite', transform: 'rotate(-8deg)' }}>
           <img 
-            src="https://images.unsplash.com/photo-1619378778949-2af10f8c8c20?q=80&w=140&h=180&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+            src="https://images.unsplash.com/photo-1619378778949-2af10f8c8c20?q=80&w=200&h=260&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
             alt="Musician with guitar"
-            className="w-28 h-36 object-cover rounded-lg border-4 border-purple-400/40 shadow-2xl opacity-85"
+            className="w-40 h-52 object-cover rounded-lg border-4 border-purple-400/60 shadow-2xl"
           />
         </div>
         
-        <div className="absolute top-24 right-28" style={{ animation: 'float 6s ease-in-out infinite 1.5s', transform: 'rotate(12deg)' }}>
+        <div className="absolute top-32 right-48" style={{ animation: 'float 6s ease-in-out infinite 1.5s', transform: 'rotate(12deg)' }}>
           <img 
-            src="https://images.unsplash.com/photo-1606405112653-809073e30efe?q=80&w=120&h=160&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+            src="https://images.unsplash.com/photo-1606405112653-809073e30efe?q=80&w=180&h=240&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
             alt="DJ with headphones"
-            className="w-24 h-32 object-cover rounded-lg border-4 border-blue-400/40 shadow-2xl opacity-75"
+            className="w-36 h-48 object-cover rounded-lg border-4 border-blue-400/60 shadow-2xl"
           />
         </div>
         
-        <div className="absolute top-8 right-40" style={{ animation: 'float 7s ease-in-out infinite 0.8s', transform: 'rotate(-15deg)' }}>
+        <div className="absolute top-4 right-80" style={{ animation: 'float 7s ease-in-out infinite 0.8s', transform: 'rotate(-15deg)' }}>
           <img 
-            src="https://images.unsplash.com/photo-1593167751520-95a058b903c2?q=80&w=130&h=170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+            src="https://images.unsplash.com/photo-1593167751520-95a058b903c2?q=80&w=190&h=250&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
             alt="Singer with microphone"
-            className="w-26 h-34 object-cover rounded-lg border-4 border-pink-400/40 shadow-2xl opacity-80"
+            className="w-38 h-50 object-cover rounded-lg border-4 border-pink-400/60 shadow-2xl"
           />
         </div>
         
-        {/* Additional stacked elements for more chaos */}
-        <div className="absolute top-32 right-8" style={{ animation: 'float 5s ease-in-out infinite 2s', transform: 'rotate(25deg)' }}>
+        {/* Additional spread out images on the left side */}
+        <div className="absolute top-16 left-8" style={{ animation: 'float 5s ease-in-out infinite 2s', transform: 'rotate(18deg)' }}>
           <img 
-            src="https://images.unsplash.com/photo-1619378778949-2af10f8c8c20?q=80&w=100&h=130&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+            src="https://images.unsplash.com/photo-1619378778949-2af10f8c8c20?q=80&w=160&h=210&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
             alt="Musician detail"
-            className="w-20 h-26 object-cover rounded-lg border-4 border-green-400/30 shadow-xl opacity-70"
+            className="w-32 h-42 object-cover rounded-lg border-4 border-green-400/60 shadow-xl"
           />
         </div>
         
-        <div className="absolute top-44 right-20" style={{ animation: 'float 9s ease-in-out infinite 0.3s', transform: 'rotate(-22deg)' }}>
+        <div className="absolute top-48 left-32" style={{ animation: 'float 9s ease-in-out infinite 0.3s', transform: 'rotate(-25deg)' }}>
           <img 
-            src="https://images.unsplash.com/photo-1606405112653-809073e30efe?q=80&w=110&h=140&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+            src="https://images.unsplash.com/photo-1606405112653-809073e30efe?q=80&w=170&h=220&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
             alt="DJ close-up"
-            className="w-22 h-28 object-cover rounded-lg border-4 border-yellow-400/35 shadow-xl opacity-65"
+            className="w-34 h-44 object-cover rounded-lg border-4 border-yellow-400/60 shadow-xl"
+          />
+        </div>
+        
+        {/* Bottom spread images */}
+        <div className="absolute bottom-16 left-16" style={{ animation: 'float 7s ease-in-out infinite 1.2s', transform: 'rotate(22deg)' }}>
+          <img 
+            src="https://images.unsplash.com/photo-1593167751520-95a058b903c2?q=80&w=180&h=240&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+            alt="Singer performing"
+            className="w-36 h-48 object-cover rounded-lg border-4 border-cyan-400/60 shadow-xl"
+          />
+        </div>
+        
+        <div className="absolute bottom-8 right-24" style={{ animation: 'float 6s ease-in-out infinite 2.5s', transform: 'rotate(-12deg)' }}>
+          <img 
+            src="https://images.unsplash.com/photo-1619378778949-2af10f8c8c20?q=80&w=190&h=250&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+            alt="Guitar player"
+            className="w-38 h-50 object-cover rounded-lg border-4 border-red-400/60 shadow-xl"
           />
         </div>
         
