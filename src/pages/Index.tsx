@@ -44,36 +44,45 @@ const Index = () => {
         <Music3 className="absolute bottom-40 left-40 text-pink-300 opacity-25 w-10 h-10 animate-bounce" style={{ animationDelay: '2s' }} />
         <Music4 className="absolute top-60 left-1/3 text-green-300 opacity-20 w-7 h-7 animate-bounce" style={{ animationDelay: '0.5s' }} />
         
-        {/* Floating Musician Images */}
-        <div className="absolute top-16 right-20" style={{ animation: 'float 6s ease-in-out infinite' }}>
+        {/* Stacked, Disorganized Musician Images */}
+        <div className="absolute top-12 right-16" style={{ animation: 'float 8s ease-in-out infinite', transform: 'rotate(-8deg)' }}>
           <img 
-            src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=120&h=120&fit=crop&crop=face" 
+            src="https://images.unsplash.com/photo-1619378778949-2af10f8c8c20?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=140&h=180&fit=crop&crop=face" 
             alt="Musician with guitar"
-            className="w-20 h-20 rounded-full border-4 border-purple-400/30 shadow-lg opacity-80"
+            className="w-28 h-36 object-cover rounded-lg border-4 border-purple-400/40 shadow-2xl opacity-85"
           />
         </div>
         
-        <div className="absolute top-40 left-16" style={{ animation: 'float 6s ease-in-out infinite 1s' }}>
+        <div className="absolute top-24 right-28" style={{ animation: 'float 6s ease-in-out infinite 1.5s', transform: 'rotate(12deg)' }}>
           <img 
-            src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=100&h=100&fit=crop&crop=face" 
+            src="https://images.unsplash.com/photo-1606405112653-809073e30efe?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=120&h=160&fit=crop&crop=face" 
             alt="DJ with headphones"
-            className="w-16 h-16 rounded-full border-4 border-blue-400/30 shadow-lg opacity-75"
+            className="w-24 h-32 object-cover rounded-lg border-4 border-blue-400/40 shadow-2xl opacity-75"
           />
         </div>
         
-        <div className="absolute bottom-32 right-16" style={{ animation: 'float 6s ease-in-out infinite 2s' }}>
+        <div className="absolute top-8 right-40" style={{ animation: 'float 7s ease-in-out infinite 0.8s', transform: 'rotate(-15deg)' }}>
           <img 
-            src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=110&h=110&fit=crop&crop=face" 
+            src="https://images.unsplash.com/photo-1593167751520-95a058b903c2?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=130&h=170&fit=crop&crop=face" 
             alt="Singer with microphone"
-            className="w-18 h-18 rounded-full border-4 border-pink-400/30 shadow-lg opacity-70"
+            className="w-26 h-34 object-cover rounded-lg border-4 border-pink-400/40 shadow-2xl opacity-80"
           />
         </div>
         
-        <div className="absolute top-1/2 right-1/4" style={{ animation: 'float 6s ease-in-out infinite 1.5s' }}>
+        {/* Additional stacked elements for more chaos */}
+        <div className="absolute top-32 right-8" style={{ animation: 'float 5s ease-in-out infinite 2s', transform: 'rotate(25deg)' }}>
           <img 
-            src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=90&h=90&fit=crop&crop=face" 
-            alt="Drummer"
-            className="w-14 h-14 rounded-full border-4 border-green-400/30 shadow-lg opacity-65"
+            src="https://images.unsplash.com/photo-1619378778949-2af10f8c8c20?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=100&h=130&fit=crop&crop=face" 
+            alt="Musician detail"
+            className="w-20 h-26 object-cover rounded-lg border-4 border-green-400/30 shadow-xl opacity-70"
+          />
+        </div>
+        
+        <div className="absolute top-44 right-20" style={{ animation: 'float 9s ease-in-out infinite 0.3s', transform: 'rotate(-22deg)' }}>
+          <img 
+            src="https://images.unsplash.com/photo-1606405112653-809073e30efe?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=110&h=140&fit=crop&crop=face" 
+            alt="DJ close-up"
+            className="w-22 h-28 object-cover rounded-lg border-4 border-yellow-400/35 shadow-xl opacity-65"
           />
         </div>
         
