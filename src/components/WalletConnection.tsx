@@ -43,12 +43,12 @@ const WalletConnection = ({ onConnect }: WalletConnectionProps) => {
         <Music4 className="absolute top-40 right-16 text-indigo-300 opacity-30 w-6 h-6 animate-bounce" style={{ animationDelay: '0.8s' }} />
         <Music className="absolute bottom-32 left-1/4 text-emerald-300 opacity-18 w-7 h-7 animate-bounce" style={{ animationDelay: '3.2s' }} />
         
-        {/* Larger, Rotated, Unique Musician Images - Moved away from center */}
+        {/* Larger, Rotated, Unique Musician Images - With center-based transparency */}
         <div className="absolute top-8 right-8" style={{ animation: 'float 8s ease-in-out infinite', transform: 'rotate(-8deg)' }}>
           <img 
             src="https://images.unsplash.com/photo-1619378778949-2af10f8c8c20?q=80&w=200&h=260&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
             alt="Musician with guitar"
-            className="w-48 h-64 object-cover rounded-lg border-4 border-purple-400/60 shadow-2xl"
+            className="w-48 h-64 object-cover rounded-lg border-4 border-purple-400/60 shadow-2xl opacity-90"
           />
         </div>
         
@@ -56,7 +56,7 @@ const WalletConnection = ({ onConnect }: WalletConnectionProps) => {
           <img 
             src="https://images.unsplash.com/photo-1606405112653-809073e30efe?q=80&w=180&h=240&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
             alt="DJ with headphones"
-            className="w-44 h-56 object-cover rounded-lg border-4 border-blue-400/60 shadow-2xl"
+            className="w-44 h-56 object-cover rounded-lg border-4 border-blue-400/60 shadow-2xl opacity-70"
           />
         </div>
         
@@ -64,7 +64,7 @@ const WalletConnection = ({ onConnect }: WalletConnectionProps) => {
           <img 
             src="https://images.unsplash.com/photo-1593167751520-95a058b903c2?q=80&w=190&h=250&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
             alt="Singer with microphone"
-            className="w-46 h-60 object-cover rounded-lg border-4 border-pink-400/60 shadow-2xl"
+            className="w-46 h-60 object-cover rounded-lg border-4 border-pink-400/60 shadow-2xl opacity-90"
           />
         </div>
         
@@ -72,7 +72,7 @@ const WalletConnection = ({ onConnect }: WalletConnectionProps) => {
           <img 
             src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=170&h=220&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
             alt="Keyboard player"
-            className="w-42 h-54 object-cover rounded-lg border-4 border-yellow-400/60 shadow-xl"
+            className="w-42 h-54 object-cover rounded-lg border-4 border-yellow-400/60 shadow-xl opacity-60"
           />
         </div>
         
@@ -80,7 +80,7 @@ const WalletConnection = ({ onConnect }: WalletConnectionProps) => {
           <img 
             src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=180&h=240&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
             alt="Drummer"
-            className="w-44 h-56 object-cover rounded-lg border-4 border-cyan-400/60 shadow-xl"
+            className="w-44 h-56 object-cover rounded-lg border-4 border-cyan-400/60 shadow-xl opacity-90"
           />
         </div>
         
@@ -88,7 +88,7 @@ const WalletConnection = ({ onConnect }: WalletConnectionProps) => {
           <img 
             src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=190&h=250&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
             alt="Concert performer"
-            className="w-46 h-60 object-cover rounded-lg border-4 border-red-400/60 shadow-xl"
+            className="w-46 h-60 object-cover rounded-lg border-4 border-red-400/60 shadow-xl opacity-90"
           />
         </div>
         
