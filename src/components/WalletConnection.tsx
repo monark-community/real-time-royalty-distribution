@@ -43,8 +43,8 @@ const WalletConnection = ({ onConnect }: WalletConnectionProps) => {
         <Music4 className="absolute top-40 right-16 text-indigo-300 opacity-30 w-6 h-6 animate-bounce" style={{ animationDelay: '0.8s' }} />
         <Music className="absolute bottom-32 left-1/4 text-emerald-300 opacity-18 w-7 h-7 animate-bounce" style={{ animationDelay: '3.2s' }} />
         
-        {/* Larger, Rotated, Unique Musician Images */}
-        <div className="absolute top-8 right-12" style={{ animation: 'float 8s ease-in-out infinite', transform: 'rotate(-8deg)' }}>
+        {/* Larger, Rotated, Unique Musician Images - Moved away from center */}
+        <div className="absolute top-8 right-8" style={{ animation: 'float 8s ease-in-out infinite', transform: 'rotate(-8deg)' }}>
           <img 
             src="https://images.unsplash.com/photo-1619378778949-2af10f8c8c20?q=80&w=200&h=260&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
             alt="Musician with guitar"
@@ -52,7 +52,7 @@ const WalletConnection = ({ onConnect }: WalletConnectionProps) => {
           />
         </div>
         
-        <div className="absolute top-32 right-80" style={{ animation: 'float 6s ease-in-out infinite 1.5s', transform: 'rotate(12deg)' }}>
+        <div className="absolute top-24 right-96" style={{ animation: 'float 6s ease-in-out infinite 1.5s', transform: 'rotate(12deg)' }}>
           <img 
             src="https://images.unsplash.com/photo-1606405112653-809073e30efe?q=80&w=180&h=240&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
             alt="DJ with headphones"
@@ -60,7 +60,7 @@ const WalletConnection = ({ onConnect }: WalletConnectionProps) => {
           />
         </div>
         
-        <div className="absolute top-4 left-8" style={{ animation: 'float 7s ease-in-out infinite 0.8s', transform: 'rotate(-15deg)' }}>
+        <div className="absolute top-4 left-4" style={{ animation: 'float 7s ease-in-out infinite 0.8s', transform: 'rotate(-15deg)' }}>
           <img 
             src="https://images.unsplash.com/photo-1593167751520-95a058b903c2?q=80&w=190&h=250&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
             alt="Singer with microphone"
@@ -68,7 +68,7 @@ const WalletConnection = ({ onConnect }: WalletConnectionProps) => {
           />
         </div>
         
-        <div className="absolute top-48 left-48" style={{ animation: 'float 9s ease-in-out infinite 0.3s', transform: 'rotate(18deg)' }}>
+        <div className="absolute top-32 left-80" style={{ animation: 'float 9s ease-in-out infinite 0.3s', transform: 'rotate(18deg)' }}>
           <img 
             src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=170&h=220&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
             alt="Keyboard player"
@@ -76,7 +76,7 @@ const WalletConnection = ({ onConnect }: WalletConnectionProps) => {
           />
         </div>
         
-        <div className="absolute bottom-16 left-16" style={{ animation: 'float 7s ease-in-out infinite 1.2s', transform: 'rotate(22deg)' }}>
+        <div className="absolute bottom-8 left-8" style={{ animation: 'float 7s ease-in-out infinite 1.2s', transform: 'rotate(22deg)' }}>
           <img 
             src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=180&h=240&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
             alt="Drummer"
@@ -84,7 +84,7 @@ const WalletConnection = ({ onConnect }: WalletConnectionProps) => {
           />
         </div>
         
-        <div className="absolute bottom-8 right-24" style={{ animation: 'float 6s ease-in-out infinite 2.5s', transform: 'rotate(-12deg)' }}>
+        <div className="absolute bottom-4 right-4" style={{ animation: 'float 6s ease-in-out infinite 2.5s', transform: 'rotate(-12deg)' }}>
           <img 
             src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=190&h=250&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
             alt="Concert performer"
