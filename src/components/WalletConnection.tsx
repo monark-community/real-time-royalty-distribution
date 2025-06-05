@@ -31,21 +31,21 @@ const WalletConnection = ({ onConnect }: WalletConnectionProps) => {
 
       {/* Floating Music Graphics */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {/* Music Note Icons - More scattered */}
-        <Music className="absolute top-20 left-20 text-purple-300 opacity-20 w-8 h-8 animate-bounce" style={{ animationDelay: '0s' }} />
-        <Music2 className="absolute top-32 right-32 text-blue-300 opacity-30 w-6 h-6 animate-bounce" style={{ animationDelay: '1s' }} />
+        {/* Music Note Icons - More scattered with increased top spacing */}
+        <Music className="absolute top-32 left-20 text-purple-300 opacity-20 w-8 h-8 animate-bounce" style={{ animationDelay: '0s' }} />
+        <Music2 className="absolute top-44 right-32 text-blue-300 opacity-30 w-6 h-6 animate-bounce" style={{ animationDelay: '1s' }} />
         <Music3 className="absolute bottom-40 left-40 text-pink-300 opacity-25 w-10 h-10 animate-bounce" style={{ animationDelay: '2s' }} />
-        <Music4 className="absolute top-60 left-1/3 text-green-300 opacity-20 w-7 h-7 animate-bounce" style={{ animationDelay: '0.5s' }} />
+        <Music4 className="absolute top-72 left-1/3 text-green-300 opacity-20 w-7 h-7 animate-bounce" style={{ animationDelay: '0.5s' }} />
         
-        {/* Additional Music Notes */}
+        {/* Additional Music Notes with more top spacing */}
         <Music className="absolute bottom-20 right-20 text-yellow-300 opacity-15 w-9 h-9 animate-bounce" style={{ animationDelay: '3s' }} />
-        <Music2 className="absolute top-16 left-1/2 text-cyan-300 opacity-25 w-5 h-5 animate-bounce" style={{ animationDelay: '1.5s' }} />
+        <Music2 className="absolute top-28 left-1/2 text-cyan-300 opacity-25 w-5 h-5 animate-bounce" style={{ animationDelay: '1.5s' }} />
         <Music3 className="absolute bottom-60 right-1/3 text-red-300 opacity-20 w-8 h-8 animate-bounce" style={{ animationDelay: '2.5s' }} />
-        <Music4 className="absolute top-40 right-16 text-indigo-300 opacity-30 w-6 h-6 animate-bounce" style={{ animationDelay: '0.8s' }} />
+        <Music4 className="absolute top-52 right-16 text-indigo-300 opacity-30 w-6 h-6 animate-bounce" style={{ animationDelay: '0.8s' }} />
         <Music className="absolute bottom-32 left-1/4 text-emerald-300 opacity-18 w-7 h-7 animate-bounce" style={{ animationDelay: '3.2s' }} />
         
-        {/* Larger, Rotated, Unique Musician Images - With center-based transparency */}
-        <div className="absolute top-8 right-8" style={{ animation: 'float 8s ease-in-out infinite', transform: 'rotate(-8deg)' }}>
+        {/* Larger, Rotated, Unique Musician Images - With center-based transparency and more top spacing */}
+        <div className="absolute top-20 right-8" style={{ animation: 'float 8s ease-in-out infinite', transform: 'rotate(-8deg)' }}>
           <img 
             src="https://images.unsplash.com/photo-1619378778949-2af10f8c8c20?q=80&w=200&h=260&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
             alt="Musician with guitar"
@@ -53,15 +53,15 @@ const WalletConnection = ({ onConnect }: WalletConnectionProps) => {
           />
         </div>
         
-        <div className="absolute top-24 right-96" style={{ animation: 'float 6s ease-in-out infinite 1.5s', transform: 'rotate(12deg)' }}>
+        <div className="absolute top-36 right-96" style={{ animation: 'float 6s ease-in-out infinite 1.5s', transform: 'rotate(12deg)' }}>
           <img 
             src="https://images.unsplash.com/photo-1606405112653-809073e30efe?q=80&w=180&h=240&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
             alt="DJ with headphones"
-            className="w-44 h-56 object-cover rounded-lg border-4 border-blue-400/60 shadow-2xl opacity-70"
+            className="w-44 h-56 object-cover rounded-lg border-4 border-blue-400/60 shadow-2xl opacity-50"
           />
         </div>
         
-        <div className="absolute top-4 left-4" style={{ animation: 'float 7s ease-in-out infinite 0.8s', transform: 'rotate(-15deg)' }}>
+        <div className="absolute top-16 left-4" style={{ animation: 'float 7s ease-in-out infinite 0.8s', transform: 'rotate(-15deg)' }}>
           <img 
             src="https://images.unsplash.com/photo-1593167751520-95a058b903c2?q=80&w=190&h=250&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
             alt="Singer with microphone"
@@ -69,11 +69,11 @@ const WalletConnection = ({ onConnect }: WalletConnectionProps) => {
           />
         </div>
         
-        <div className="absolute top-32 left-80" style={{ animation: 'float 9s ease-in-out infinite 0.3s', transform: 'rotate(18deg)' }}>
+        <div className="absolute top-44 left-80" style={{ animation: 'float 9s ease-in-out infinite 0.3s', transform: 'rotate(18deg)' }}>
           <img 
             src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=170&h=220&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
             alt="Keyboard player"
-            className="w-42 h-54 object-cover rounded-lg border-4 border-yellow-400/60 shadow-xl opacity-60"
+            className="w-42 h-54 object-cover rounded-lg border-4 border-yellow-400/60 shadow-xl opacity-40"
           />
         </div>
         
@@ -93,8 +93,8 @@ const WalletConnection = ({ onConnect }: WalletConnectionProps) => {
           />
         </div>
         
-        {/* Abstract Music Wave Lines - More of them */}
-        <svg className="absolute top-24 left-1/2 opacity-10" width="200" height="60">
+        {/* Abstract Music Wave Lines - More of them with increased top spacing */}
+        <svg className="absolute top-36 left-1/2 opacity-10" width="200" height="60">
           <path d="M0,30 Q50,10 100,30 T200,30" stroke="url(#gradient1)" strokeWidth="3" fill="none" />
           <defs>
             <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -114,8 +114,8 @@ const WalletConnection = ({ onConnect }: WalletConnectionProps) => {
           </defs>
         </svg>
         
-        {/* New wave lines */}
-        <svg className="absolute top-1/3 left-20 opacity-12" width="180" height="50">
+        {/* New wave lines with more top spacing */}
+        <svg className="absolute top-1/2 left-20 opacity-12" width="180" height="50">
           <path d="M0,25 Q45,8 90,25 T180,25" stroke="url(#gradient3)" strokeWidth="2.5" fill="none" />
           <defs>
             <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -135,22 +135,22 @@ const WalletConnection = ({ onConnect }: WalletConnectionProps) => {
           </defs>
         </svg>
         
-        {/* Fun Vector Graphics - Circles and Dots */}
-        <div className="absolute top-1/4 left-1/3">
+        {/* Fun Vector Graphics - Circles and Dots with more top spacing */}
+        <div className="absolute top-1/3 left-1/3">
           <div className="w-4 h-4 bg-purple-400/20 rounded-full animate-pulse"></div>
         </div>
         <div className="absolute bottom-1/4 right-1/4">
           <div className="w-6 h-6 bg-blue-400/15 rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
         </div>
-        <div className="absolute top-1/2 left-1/4">
+        <div className="absolute top-3/5 left-1/4">
           <div className="w-3 h-3 bg-pink-400/25 rounded-full animate-pulse" style={{ animationDelay: '2s' }}></div>
         </div>
         <div className="absolute bottom-1/3 left-1/2">
           <div className="w-5 h-5 bg-green-400/18 rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
         </div>
         
-        {/* Geometric shapes */}
-        <div className="absolute top-20 left-1/2 w-8 h-8 border-2 border-cyan-400/20 rotate-45 animate-spin" style={{ animationDuration: '10s' }}></div>
+        {/* Geometric shapes with increased top spacing */}
+        <div className="absolute top-32 left-1/2 w-8 h-8 border-2 border-cyan-400/20 rotate-45 animate-spin" style={{ animationDuration: '10s' }}></div>
         <div className="absolute bottom-20 right-1/3 w-6 h-6 border-2 border-yellow-400/25 rotate-12 animate-spin" style={{ animationDuration: '15s', animationDelay: '2s' }}></div>
         <div className="absolute top-2/3 right-1/4 w-10 h-10 border-2 border-purple-400/15 rotate-45 animate-spin" style={{ animationDuration: '12s', animationDelay: '1s' }}></div>
       </div>
@@ -168,8 +168,33 @@ const WalletConnection = ({ onConnect }: WalletConnectionProps) => {
             </p>
           </div>
 
-          {/* Feature Grid - Now First */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          {/* Main Call to Action - Now First */}
+          <div className="mb-20">
+            <Card className="bg-slate-800/60 border-slate-600 max-w-2xl mx-auto backdrop-blur-sm shadow-2xl">
+              <CardHeader className="text-center pb-4">
+                <CardTitle className="text-white text-4xl mb-4 font-bold">Ready to Get Started?</CardTitle>
+                <CardDescription className="text-slate-300 text-lg">
+                  Connect your Web3 wallet to revolutionize how you receive royalties
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <Button 
+                  onClick={onConnect}
+                  className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white text-xl py-6 font-bold shadow-lg hover:shadow-xl transition-all duration-300"
+                  size="lg"
+                >
+                  <Wallet className="w-6 h-6 mr-3" />
+                  Connect Your Wallet Now
+                </Button>
+                <p className="text-sm text-slate-400 text-center">
+                  Supports MetaMask, WalletConnect, Coinbase Wallet, and other Web3 wallets
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Feature Grid - Now Second with more top margin */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16 mt-24">
             <Card className="bg-slate-800/40 border-slate-700 hover:bg-slate-800/60 transition-all duration-300 backdrop-blur-sm">
               <CardHeader className="pb-4">
                 <div className="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mb-4">
@@ -216,31 +241,6 @@ const WalletConnection = ({ onConnect }: WalletConnectionProps) => {
                   Direct payments from consumers to creators
                 </CardDescription>
               </CardHeader>
-            </Card>
-          </div>
-
-          {/* Main Call to Action - Now Second */}
-          <div className="mb-16">
-            <Card className="bg-slate-800/60 border-slate-600 max-w-2xl mx-auto backdrop-blur-sm shadow-2xl">
-              <CardHeader className="text-center pb-4">
-                <CardTitle className="text-white text-4xl mb-4 font-bold">Ready to Get Started?</CardTitle>
-                <CardDescription className="text-slate-300 text-lg">
-                  Connect your Web3 wallet to revolutionize how you receive royalties
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <Button 
-                  onClick={onConnect}
-                  className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white text-xl py-6 font-bold shadow-lg hover:shadow-xl transition-all duration-300"
-                  size="lg"
-                >
-                  <Wallet className="w-6 h-6 mr-3" />
-                  Connect Your Wallet Now
-                </Button>
-                <p className="text-sm text-slate-400 text-center">
-                  Supports MetaMask, WalletConnect, Coinbase Wallet, and other Web3 wallets
-                </p>
-              </CardContent>
             </Card>
           </div>
         </div>
