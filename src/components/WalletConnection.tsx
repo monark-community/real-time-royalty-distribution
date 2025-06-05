@@ -160,20 +160,71 @@ const WalletConnection = ({ onConnect }: WalletConnectionProps) => {
         <div className="max-w-6xl w-full">
           <div className="text-center mb-16">
             <h1 className="text-6xl font-bold text-white mb-6">StreamRoyalties</h1>
-            <p className="text-2xl text-slate-300 mb-4">
+            <p className="text-2xl text-slate-200 mb-4">
               Revolutionizing Digital Creator Payouts
             </p>
-            <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+            <p className="text-lg text-slate-300 max-w-2xl mx-auto">
               Instant, transparent, and automatic revenue distribution powered by blockchain technology
             </p>
           </div>
 
-          {/* Main Call to Action - Now First */}
+          {/* Feature Grid - Now First with more top margin */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16 mt-32">
+            <Card className="bg-slate-800/40 border-slate-700 hover:bg-slate-800/60 transition-all duration-300 backdrop-blur-sm">
+              <CardHeader className="pb-4">
+                <div className="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mb-4">
+                  <Zap className="w-6 h-6 text-white" />
+                </div>
+                <CardTitle className="text-white text-lg">Real-time Payouts</CardTitle>
+                <CardDescription className="text-slate-200 text-sm">
+                  Receive earnings instantly as revenue is generated
+                </CardDescription>
+              </CardHeader>
+            </Card>
+
+            <Card className="bg-slate-800/40 border-slate-700 hover:bg-slate-800/60 transition-all duration-300 backdrop-blur-sm">
+              <CardHeader className="pb-4">
+                <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
+                  <Shield className="w-6 h-6 text-white" />
+                </div>
+                <CardTitle className="text-white text-lg">Transparent & Secure</CardTitle>
+                <CardDescription className="text-slate-200 text-sm">
+                  All transactions recorded on-chain for complete transparency
+                </CardDescription>
+              </CardHeader>
+            </Card>
+
+            <Card className="bg-slate-800/40 border-slate-700 hover:bg-slate-800/60 transition-all duration-300 backdrop-blur-sm">
+              <CardHeader className="pb-4">
+                <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mb-4">
+                  <Users className="w-6 h-6 text-white" />
+                </div>
+                <CardTitle className="text-white text-lg">Collaborative Splits</CardTitle>
+                <CardDescription className="text-slate-200 text-sm">
+                  Configure revenue splits among team members
+                </CardDescription>
+              </CardHeader>
+            </Card>
+
+            <Card className="bg-slate-800/40 border-slate-700 hover:bg-slate-800/60 transition-all duration-300 backdrop-blur-sm">
+              <CardHeader className="pb-4">
+                <div className="w-12 h-12 bg-orange-600 rounded-lg flex items-center justify-center mb-4">
+                  <Wallet className="w-6 h-6 text-white" />
+                </div>
+                <CardTitle className="text-white text-lg">No Middlemen</CardTitle>
+                <CardDescription className="text-slate-200 text-sm">
+                  Direct payments from consumers to creators
+                </CardDescription>
+              </CardHeader>
+            </Card>
+          </div>
+
+          {/* Main Call to Action - Now Second */}
           <div className="mb-20">
             <Card className="bg-slate-800/60 border-slate-600 max-w-2xl mx-auto backdrop-blur-sm shadow-2xl">
               <CardHeader className="text-center pb-4">
                 <CardTitle className="text-white text-4xl mb-4 font-bold">Ready to Get Started?</CardTitle>
-                <CardDescription className="text-slate-300 text-lg">
+                <CardDescription className="text-slate-200 text-lg">
                   Connect your Web3 wallet to revolutionize how you receive royalties
                 </CardDescription>
               </CardHeader>
@@ -186,61 +237,10 @@ const WalletConnection = ({ onConnect }: WalletConnectionProps) => {
                   <Wallet className="w-6 h-6 mr-3" />
                   Connect Your Wallet Now
                 </Button>
-                <p className="text-sm text-slate-400 text-center">
+                <p className="text-sm text-slate-300 text-center">
                   Supports MetaMask, WalletConnect, Coinbase Wallet, and other Web3 wallets
                 </p>
               </CardContent>
-            </Card>
-          </div>
-
-          {/* Feature Grid - Now Second with more top margin */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16 mt-24">
-            <Card className="bg-slate-800/40 border-slate-700 hover:bg-slate-800/60 transition-all duration-300 backdrop-blur-sm">
-              <CardHeader className="pb-4">
-                <div className="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mb-4">
-                  <Zap className="w-6 h-6 text-white" />
-                </div>
-                <CardTitle className="text-white text-lg">Real-time Payouts</CardTitle>
-                <CardDescription className="text-slate-300 text-sm">
-                  Receive earnings instantly as revenue is generated
-                </CardDescription>
-              </CardHeader>
-            </Card>
-
-            <Card className="bg-slate-800/40 border-slate-700 hover:bg-slate-800/60 transition-all duration-300 backdrop-blur-sm">
-              <CardHeader className="pb-4">
-                <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
-                  <Shield className="w-6 h-6 text-white" />
-                </div>
-                <CardTitle className="text-white text-lg">Transparent & Secure</CardTitle>
-                <CardDescription className="text-slate-300 text-sm">
-                  All transactions recorded on-chain for complete transparency
-                </CardDescription>
-              </CardHeader>
-            </Card>
-
-            <Card className="bg-slate-800/40 border-slate-700 hover:bg-slate-800/60 transition-all duration-300 backdrop-blur-sm">
-              <CardHeader className="pb-4">
-                <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center mb-4">
-                  <Users className="w-6 h-6 text-white" />
-                </div>
-                <CardTitle className="text-white text-lg">Collaborative Splits</CardTitle>
-                <CardDescription className="text-slate-300 text-sm">
-                  Configure revenue splits among team members
-                </CardDescription>
-              </CardHeader>
-            </Card>
-
-            <Card className="bg-slate-800/40 border-slate-700 hover:bg-slate-800/60 transition-all duration-300 backdrop-blur-sm">
-              <CardHeader className="pb-4">
-                <div className="w-12 h-12 bg-orange-600 rounded-lg flex items-center justify-center mb-4">
-                  <Wallet className="w-6 h-6 text-white" />
-                </div>
-                <CardTitle className="text-white text-lg">No Middlemen</CardTitle>
-                <CardDescription className="text-slate-300 text-sm">
-                  Direct payments from consumers to creators
-                </CardDescription>
-              </CardHeader>
             </Card>
           </div>
         </div>
@@ -255,14 +255,14 @@ const WalletConnection = ({ onConnect }: WalletConnectionProps) => {
                 <Music2 className="w-6 h-6 text-purple-400" />
                 <h3 className="text-white font-bold text-lg">StreamRoyalties</h3>
               </div>
-              <p className="text-slate-400 text-sm">
+              <p className="text-slate-300 text-sm">
                 Revolutionizing how creators receive their earnings through blockchain technology.
               </p>
             </div>
             
             <div>
               <h4 className="text-white font-semibold mb-3">Platform</h4>
-              <ul className="space-y-2 text-slate-400 text-sm">
+              <ul className="space-y-2 text-slate-300 text-sm">
                 <li><a href="#" className="hover:text-white transition-colors">How it Works</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Features</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Pricing</a></li>
@@ -272,7 +272,7 @@ const WalletConnection = ({ onConnect }: WalletConnectionProps) => {
             
             <div>
               <h4 className="text-white font-semibold mb-3">Support</h4>
-              <ul className="space-y-2 text-slate-400 text-sm">
+              <ul className="space-y-2 text-slate-300 text-sm">
                 <li><a href="#" className="hover:text-white transition-colors">Documentation</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Help Center</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Contact Us</a></li>
@@ -283,13 +283,13 @@ const WalletConnection = ({ onConnect }: WalletConnectionProps) => {
             <div>
               <h4 className="text-white font-semibold mb-3">Connect</h4>
               <div className="flex space-x-4">
-                <a href="#" className="text-slate-400 hover:text-white transition-colors">
+                <a href="#" className="text-slate-300 hover:text-white transition-colors">
                   <Twitter className="w-5 h-5" />
                 </a>
-                <a href="#" className="text-slate-400 hover:text-white transition-colors">
+                <a href="#" className="text-slate-300 hover:text-white transition-colors">
                   <Github className="w-5 h-5" />
                 </a>
-                <a href="#" className="text-slate-400 hover:text-white transition-colors">
+                <a href="#" className="text-slate-300 hover:text-white transition-colors">
                   <Globe className="w-5 h-5" />
                 </a>
               </div>
@@ -297,13 +297,13 @@ const WalletConnection = ({ onConnect }: WalletConnectionProps) => {
           </div>
           
           <div className="border-t border-slate-700 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-slate-400 text-sm">
+            <p className="text-slate-300 text-sm">
               © 2024 StreamRoyalties. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="text-slate-400 hover:text-white transition-colors text-sm">Privacy Policy</a>
-              <a href="#" className="text-slate-400 hover:text-white transition-colors text-sm">Terms of Service</a>
-              <a href="#" className="text-slate-400 hover:text-white transition-colors text-sm">Cookie Policy</a>
+              <a href="#" className="text-slate-300 hover:text-white transition-colors text-sm">Privacy Policy</a>
+              <a href="#" className="text-slate-300 hover:text-white transition-colors text-sm">Terms of Service</a>
+              <a href="#" className="text-slate-300 hover:text-white transition-colors text-sm">Cookie Policy</a>
             </div>
           </div>
         </div>
