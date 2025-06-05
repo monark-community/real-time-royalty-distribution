@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Wallet, Shield, Zap, Users, Music, Music2, Music3, Music4, Github, Twitter, Globe } from 'lucide-react';
@@ -167,33 +168,8 @@ const WalletConnection = ({ onConnect }: WalletConnectionProps) => {
             </p>
           </div>
 
-          {/* Main Call to Action - Bigger and More Prominent */}
-          <div className="mb-16">
-            <Card className="bg-slate-800/60 border-slate-600 max-w-2xl mx-auto backdrop-blur-sm shadow-2xl">
-              <CardHeader className="text-center pb-4">
-                <CardTitle className="text-white text-4xl mb-4 font-bold">Ready to Get Started?</CardTitle>
-                <CardDescription className="text-slate-300 text-lg">
-                  Connect your Web3 wallet to revolutionize how you receive royalties
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <Button 
-                  onClick={onConnect}
-                  className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white text-xl py-6 font-bold shadow-lg hover:shadow-xl transition-all duration-300"
-                  size="lg"
-                >
-                  <Wallet className="w-6 h-6 mr-3" />
-                  Connect Your Wallet Now
-                </Button>
-                <p className="text-sm text-slate-400 text-center">
-                  Supports MetaMask, WalletConnect, Coinbase Wallet, and other Web3 wallets
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Feature Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {/* Feature Grid - Now First */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             <Card className="bg-slate-800/40 border-slate-700 hover:bg-slate-800/60 transition-all duration-300 backdrop-blur-sm">
               <CardHeader className="pb-4">
                 <div className="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mb-4">
@@ -240,6 +216,31 @@ const WalletConnection = ({ onConnect }: WalletConnectionProps) => {
                   Direct payments from consumers to creators
                 </CardDescription>
               </CardHeader>
+            </Card>
+          </div>
+
+          {/* Main Call to Action - Now Second */}
+          <div className="mb-16">
+            <Card className="bg-slate-800/60 border-slate-600 max-w-2xl mx-auto backdrop-blur-sm shadow-2xl">
+              <CardHeader className="text-center pb-4">
+                <CardTitle className="text-white text-4xl mb-4 font-bold">Ready to Get Started?</CardTitle>
+                <CardDescription className="text-slate-300 text-lg">
+                  Connect your Web3 wallet to revolutionize how you receive royalties
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <Button 
+                  onClick={onConnect}
+                  className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white text-xl py-6 font-bold shadow-lg hover:shadow-xl transition-all duration-300"
+                  size="lg"
+                >
+                  <Wallet className="w-6 h-6 mr-3" />
+                  Connect Your Wallet Now
+                </Button>
+                <p className="text-sm text-slate-400 text-center">
+                  Supports MetaMask, WalletConnect, Coinbase Wallet, and other Web3 wallets
+                </p>
+              </CardContent>
             </Card>
           </div>
         </div>
