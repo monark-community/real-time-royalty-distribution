@@ -45,7 +45,7 @@ const Index = () => {
         <Music4 className="absolute top-60 left-1/3 text-green-300 opacity-20 w-7 h-7 animate-bounce" style={{ animationDelay: '0.5s' }} />
         
         {/* Floating Musician Images */}
-        <div className="absolute top-16 right-20 animate-float">
+        <div className="absolute top-16 right-20" style={{ animation: 'float 6s ease-in-out infinite' }}>
           <img 
             src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=120&h=120&fit=crop&crop=face" 
             alt="Musician with guitar"
@@ -53,7 +53,7 @@ const Index = () => {
           />
         </div>
         
-        <div className="absolute top-40 left-16 animate-float" style={{ animationDelay: '1s' }}>
+        <div className="absolute top-40 left-16" style={{ animation: 'float 6s ease-in-out infinite 1s' }}>
           <img 
             src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=100&h=100&fit=crop&crop=face" 
             alt="DJ with headphones"
@@ -61,7 +61,7 @@ const Index = () => {
           />
         </div>
         
-        <div className="absolute bottom-32 right-16 animate-float" style={{ animationDelay: '2s' }}>
+        <div className="absolute bottom-32 right-16" style={{ animation: 'float 6s ease-in-out infinite 2s' }}>
           <img 
             src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=110&h=110&fit=crop&crop=face" 
             alt="Singer with microphone"
@@ -69,7 +69,7 @@ const Index = () => {
           />
         </div>
         
-        <div className="absolute top-1/2 right-1/4 animate-float" style={{ animationDelay: '1.5s' }}>
+        <div className="absolute top-1/2 right-1/4" style={{ animation: 'float 6s ease-in-out infinite 1.5s' }}>
           <img 
             src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=90&h=90&fit=crop&crop=face" 
             alt="Drummer"
@@ -200,16 +200,12 @@ const Index = () => {
         </Tabs>
       </div>
 
-      {/* Custom CSS for floating animation */}
-      <style jsx>{`
+      {/* Global CSS for float animation */}
+      <style>{`
         @keyframes float {
           0%, 100% { transform: translateY(0px) rotate(0deg); }
           33% { transform: translateY(-10px) rotate(1deg); }
           66% { transform: translateY(-5px) rotate(-1deg); }
-        }
-        
-        .animate-float {
-          animation: float 6s ease-in-out infinite;
         }
       `}</style>
     </div>
